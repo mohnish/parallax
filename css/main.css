@@ -93,8 +93,29 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+  background: url(../img/bg_one.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
+body {
+  height: 4000px;
+  color: #fff;
+}
 
+#parallax {
+  position: absolute;
+  top: 500px;
+  text-align: center;
+  width: 100%;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-size: 20pt;
+}
 
 
 
