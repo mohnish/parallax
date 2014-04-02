@@ -1,18 +1,15 @@
 
-(function(window, document) {
+(function() {
   var parallaxElement = document.querySelector('#parallax')
     , scrollInfo = document.querySelector('.scroll');
 
-  var parallaxScroll = function(e) {
-    // Uses CPU
-    // parallaxElement.style.marginTop = (window.scrollY/2) + 'px'
+  function parallaxScroll(e) {
+    var parallaxFactor = 0.9
+      , parallaxScrollY = (window.scrollY * parallaxFactor);
 
-    // Uses GPU
-    parallaxElement.style.transform = 'translate3d(0px, ' + (window.scrollY/2) + 'px, 0px)'
-
-    scrollInfo.innerHTML = 'Actual: ' + window.scrollY + '; Parallax: ' + (window.scrollY/2)
+    parallaxElement.style.webkitTransform = 'translate3d(0px, ' + parallaxScrollY + 'px, 0px)';
+    scrollInfo.innerHTML = 'Actual: ' + window.scrollY + '; Parallax: ' + parallaxScrollY;
   }
 
-  window.onscroll = parallaxScroll;
-
-})(window, document);
+  window.addEventListener('scroll', parallaxScroll);
+})();
