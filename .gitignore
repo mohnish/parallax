@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 lib-cov
 *.seed
 *.log
@@ -39,5 +38,3 @@ build/Release
 # Dependency directory
 # Deployed apps should consider commenting this line out:
 # see https://npmjs.org/doc/faq.html#Should-I-check-my-node_modules-folder-into-git
-node_modules
->>>>>>> 67e8ed423850097a484f86a4201aa3776af46b92
