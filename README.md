@@ -1,5 +1,9 @@
 ## Parallax
 
+### Demo
+
+[http://mohni.sh/parallax](http://mohni.sh/parallax)
+
 ### (WIP) Parallax effects for your webpage!
 
 ### Images Copyright
